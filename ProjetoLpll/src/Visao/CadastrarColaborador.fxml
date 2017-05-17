@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="TelaCadastroColaborador" maxHeight="-Infinity" maxWidth="-Infinity" 
+minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ColaboradorControle">
+   <children>
+      <TextField fx:id="txtCPF" layoutX="67.0" layoutY="57.0" prefHeight="25.0" prefWidth="225.0" promptText="txtCpf" />
+      <Label fx:id="lblCPF" layoutX="24.0" layoutY="61.0" text="CPF :" />
+      <Label fx:id="lblNome" layoutX="23.0" layoutY="89.0" text="Nome :" />
+      <TextField fx:id="txtNome" layoutX="66.0" layoutY="85.0" prefHeight="25.0" prefWidth="423.0" promptText="txtNome" />
+      <Button fx:id="btnCadastrar" layoutX="452.0" layoutY="346.0" mnemonicParsing="false" onAction="#cadastrarColaborador" text="Cadastrar" />
+      <TextField fx:id="txtId" layoutX="431.0" layoutY="19.0" prefHeight="25.0" prefWidth="54.0" visible="false" />
+      <Label fx:id="lblRg" layoutX="300.0" layoutY="60.0" text="RG :" />
+      <TextField fx:id="txtRG" layoutX="340.0" layoutY="57.0" promptText="txtRg" />
+      <Label fx:id="lblEndereco" layoutX="29.0" layoutY="130.0" text="End.:" />
+      <Label fx:id="lblFoneFixo" layoutX="28.0" layoutY="167.0" text="Fone Fixo :" />
+      <Label fx:id="lblEmail" layoutX="28.0" layoutY="202.0" text="Email :" />
+      <TextField fx:id="txtEndereco" layoutX="67.0" layoutY="126.0" prefHeight="25.0" prefWidth="423.0" promptText="txtEndereco" />
+      <TextField fx:id="txtFoneFixo" layoutX="89.0" layoutY="163.0" prefHeight="25.0" prefWidth="149.0" promptText="txtFoneFixo" />
+      <TextField fx:id="txtFoneCelular" layoutX="318.0" layoutY="163.0" prefHeight="25.0" prefWidth="172.0" promptText="txtFoneCelular" />
+      <Label fx:id="lblFoneCelular" layoutX="257.0" layoutY="167.0" text="Fone Cel. :" />
+      <TextField fx:id="txtEmail" layoutX="66.0" layoutY="198.0" prefHeight="25.0" prefWidth="423.0" promptText="txtEndereco" />
+      <Label layoutX="196.0" layoutY="11.0" text="Cadastro de Colaborador" textFill="#f40303">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

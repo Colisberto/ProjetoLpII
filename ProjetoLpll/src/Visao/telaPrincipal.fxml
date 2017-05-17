@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+ xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuControle">
+   <center>
+      <Pane fx:id="paneInicial" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtLogin" layoutX="217.0" layoutY="175.0" prefHeight="25.0" prefWidth="207.0" />
+            <PasswordField fx:id="txtSenha" layoutX="217.0" layoutY="211.0" prefHeight="25.0" prefWidth="207.0" />
+            <Text layoutX="132.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TutoALFA" textAlignment="CENTER" wrappingWidth="337.0">
+               <font>
+                  <Font name="System Bold" size="69.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5833333333333334" centerY="0.17619047619047618" cycleMethod="REPEAT" focusDistance="0.04651162790697683" radius="0.5116279069767442">
+                     <stops>
+                        <Stop color="#b20f0ffa" />
+                        <Stop color="#b20f0ffa" offset="0.4712643678160918" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text layoutX="174.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:" />
+            <Text layoutX="173.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:" />
+            <HBox layoutX="262.0" layoutY="304.0" prefHeight="26.0" prefWidth="117.0" spacing="6.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnEntrar" text="Entrar" />
+                  <Button mnemonicParsing="false" onAction="#btnCancelar" text="Cancelar" />
+               </children>
+            </HBox>
+            <Label fx:id="mensagem" layoutX="216.0" layoutY="154.0" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <MenuBar fx:id="menuBar" disable="true" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+               <items>
+              <MenuItem fx:id="menuItemCadastrarUniversidade" mnemonicParsing="false" onAction="#abrirCadastrarUniversidade" text="Cadastrar Universidade" />
+                  <MenuItem fx:id="menuItemCadastrarColaborador" mnemonicParsing="false" onAction="#abrirCadastrarColaborador" text="Cadastrar Colaborador" />
+                  <MenuItem fx:id="menuItemCadastrarCurso" mnemonicParsing="false" onAction="#abrirCadastrarCurso" text="Cadastrar Curso" />
+                  <MenuItem fx:id="menuItemCadastrarDepartamento" mnemonicParsing="false" onAction="#abrirCadastrarDepartamento" text="Cadastrar Departamento" />
+                  <MenuItem fx:id="meuItemCadastrarCategoria" mnemonicParsing="false" onAction="#abrirCadastrarCategoria" text="Cadastrar Categoria" />
+                  <MenuItem fx:id="menuItemCadastarTutoria" mnemonicParsing="false" onAction="#abrirCadastrarTutoria" text="Cadastrar Tutoria" />
+                  <MenuItem fx:id="menuItemCadastrarParametro" mnemonicParsing="false" onAction="#abrirCadastrarParametro" text="Cadastar Parâmetro" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ocorrências">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Registrar Ocorrências" />
+                  <MenuItem mnemonicParsing="false" text="Dar Parecer" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Consultas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Minhas Ocorrências" />
+                  <MenuItem mnemonicParsing="false" text="Ocorrências em Andamento" />
+                  <MenuItem mnemonicParsing="false" text="Ocorrências Concluídas" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

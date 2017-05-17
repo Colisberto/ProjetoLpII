@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="120.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TutoALFA" textAlignment="CENTER" wrappingWidth="337.0">
+         <fill>
+            <RadialGradient centerX="0.5833333333333334" centerY="0.17619047619047618" cycleMethod="REPEAT" focusDistance="0.04651162790697683" radius="0.5116279069767442">
+               <stops>
+                  <Stop color="#b20f0ffa" />
+                  <Stop color="#b20f0ffa" offset="0.4712643678160918" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <font>
+            <Font name="System Bold" size="69.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

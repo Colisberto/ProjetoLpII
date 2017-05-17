@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="27.0" prefHeight="17.0" prefWidth="44.0" text="Tutoria:" />
+      <TextField layoutX="465.0" layoutY="23.0" prefHeight="25.0" prefWidth="102.0" />
+      <ComboBox layoutX="58.0" layoutY="23.0" prefWidth="150.0" promptText="Selecionar Tutoria" />
+      <Label layoutX="228.0" layoutY="27.0" prefHeight="17.0" prefWidth="33.0" text="Data:" />
+      <Label layoutX="432.0" layoutY="27.0" prefHeight="17.0" prefWidth="33.0" text="Hora:" />
+      <DatePicker layoutX="261.0" layoutY="23.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="68.0" prefHeight="19.0" prefWidth="86.0" text="Departamento:" />
+      <ComboBox layoutX="100.0" layoutY="65.0" prefHeight="25.0" prefWidth="102.0" promptText="Selecionar" />
+      <Label layoutX="228.0" layoutY="68.0" prefHeight="19.0" prefWidth="112.0" text="SubDepartamento:" />
+      <ComboBox layoutX="336.0" layoutY="65.0" prefHeight="25.0" prefWidth="102.0" promptText="Selecionar" />
+      <Label layoutX="14.0" layoutY="352.0" prefHeight="19.0" prefWidth="86.0" text="Ocorrência:" />
+      <TextArea layoutX="12.0" layoutY="378.0" prefHeight="200.0" prefWidth="618.0" />
+      <CheckBox layoutX="21.0" layoutY="591.0" mnemonicParsing="false" text="Concluída" />
+      <CheckBox layoutX="133.0" layoutY="591.0" mnemonicParsing="false" text="Em andamento" />
+      <Button layoutX="486.0" layoutY="587.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Salvar" />
+      <Button layoutX="557.0" layoutY="587.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Cancelar" />
+      <TableView layoutX="14.0" layoutY="119.0" prefHeight="200.0" prefWidth="601.0">
+        <columns>
+          <TableColumn prefWidth="294.0" text="Curso" />
+          <TableColumn minWidth="0.0" prefWidth="162.0" text="Período" />
+            <TableColumn prefWidth="143.0" text="Turno" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

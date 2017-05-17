@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btbCadastrarCategoria" layoutX="444.0" layoutY="170.0" mnemonicParsing="false" text="Cadastrar" />
+      <Label fx:id="lblNomeCategoria" layoutX="25.0" layoutY="100.0" text="Nome Categoria:" />
+      <TextField fx:id="txtNomeCategoria" layoutX="167.0" layoutY="96.0" prefHeight="25.0" prefWidth="344.0" />
+      <TextField fx:id="txtGerenteDepartamento" layoutX="167.0" layoutY="64.0" prefHeight="25.0" prefWidth="344.0" />
+      <Label fx:id="lblGerenteDepartamento" layoutX="25.0" layoutY="68.0" text="Gerente Departamento:" />
+      <ComboBox fx:id="comboDepartamento" layoutX="25.0" layoutY="31.0" prefWidth="150.0" promptText="Departamento" />
+   </children>
+</AnchorPane>
